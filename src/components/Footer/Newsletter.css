@@ -1,0 +1,19 @@
+.gericht__newsletter {
+    padding: 2rem 4rem;
+    border: 1px solid var(--color-golden);
+    background: var(--color-black);
+}
+
+.gericht__newsletter-heading {
+    text-align: center;
+}
+
+.gericht__newsletter-input {
+    flex-direction: row;
+    margin-top: 3rem;
+}
+
+.gericht__newsletter-input input {
+    width: 620px;
+    border: 1px solid var(--color-golden);
+}

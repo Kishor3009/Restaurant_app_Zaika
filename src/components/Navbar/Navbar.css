@@ -1,0 +1,216 @@
+.gericht__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+
+    padding: 1rem 2rem;
+}
+
+.gericht__navbar {
+    background:#965f48; /* Blue background color */
+}
+
+.gericht__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gericht__navbar-logo img {
+    width: 150px;
+}
+
+.gericht__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.gericht__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+    color: #ffffff; /* White link color */
+    font-size: 18px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+
+
+.gericht__navbar-links li:hover {
+    color: var(--color-grey);
+}
+
+.gericht__navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gericht__navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.gericht__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+
+.gericht__navbar-login div {
+    width: 1px;
+    height: 30px;
+    background: var(--color-grey);
+}
+
+.gericht__navbar-links .menu-item-home {
+    color: #ffea00; /* Gold color for Home */
+}
+
+.gericht__navbar-links .menu-item-about {
+    color: #ffd700; /* Gold color for About */
+}
+
+.gericht__navbar-links .menu-item-awards {
+    color: #fffb00; /* Gold color for Awards */
+}
+
+.gericht__navbar-links .menu-item-contact {
+    color: #ffd700; /* Gold color for Contact */
+}
+
+.gericht__navbar-smallscreen {
+    display: none;
+}
+
+.gericht__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-black);
+    transition: .5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.gericht__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px;
+    color: var(--color-golden);
+    cursor: pointer;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.gericht__navbar-smallscreen_links {
+    list-style: none;
+}
+
+.gericht__navbar-smallscreen_links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+.gericht__navbar-smallscreen_links li:hover {
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+    .gericht__navbar-logo img {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .gericht__navbar-links {
+        display: none;
+    }
+
+    .gericht__navbar-smallscreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gericht__navbar {
+        padding: 1rem;
+    }
+
+    .gericht__navbar-login {
+        display: none;
+    }
+
+    .gericht__navbar-logo img {
+        width: 110px;
+    }
+    /* Updated styles with a warm color palette */
+
+.gericht__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5dcb4; /* Warm beige background color */
+    padding: 1rem 2rem;
+    transition: background-color 0.5s ease;
+  }
+  
+  .gericht__navbar:hover {
+    background: #e1c1a1; /* Slightly darker beige on hover */
+  }
+  
+  .gericht__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+    color: #4d4d4d; /* Dark gray link color */
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.5s ease;
+  }
+  
+  .gericht__navbar-links li:hover {
+    color: #965f48; /* Rusty brown hover color for links */
+  }
+  
+  .gericht__navbar-actions a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  
+  .gericht__navbar-actions a:hover {
+    color: #965f48; /* Rusty brown hover color for buttons */
+    transform: scale(1.1);
+  }
+  
+  .gericht__navbar-smallscreen-overlay {
+    background: #f5dcb4;
+  }
+  
+  .gericht__navbar-smallscreen-links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: #965f48; /* Rusty brown link color */
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.5s ease;
+  }
+  
+  .gericht__navbar-smallscreen-links li:hover {
+    color: #4d4d4d; /* Dark gray hover color for links */
+  }
+  
+}
